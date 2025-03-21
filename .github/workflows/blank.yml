@@ -11,12 +11,7 @@ jobs:
         shell: pwsh
 
     steps:
-      - uses: actions/checkout@v4
-      - name: TEST
-        run: |
-          Write-Host "HEJHEJHEJHEJ".Substring(0,5)
-
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
-          Write-Host "${{ secrets.MY_SECRET }}".Substring(0,5)
+          Write-Host "${{ secrets.MY_SECRET }}".Length
