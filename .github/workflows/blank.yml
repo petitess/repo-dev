@@ -15,4 +15,4 @@ jobs:
       - name: Run a multi-line script
         run: |
           Write-Host "${{ secrets.MY_SECRET }}".Length
-          Write-Host "${{ secrets.MY_SECRET }}".Substring(1,6)
+          Write-Host "${{ secrets.MY_SECRET }}".Substring(1)
